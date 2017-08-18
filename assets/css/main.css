@@ -327,7 +327,7 @@
 	}
 
 	.\36 u, .\36 u\24 {
-		width: 50%;
+		width: 100%;
 		clear: none;
 		margin-left: 0;
 	}
@@ -1268,6 +1268,7 @@
 		border: 0;
 	}
 
+
 /* Section/Article */
 
 	section,
@@ -1283,6 +1284,10 @@
 	}
 
 	header.style1 {
+		text-align: center;
+	}
+
+	header.style2 {
 		text-align: center;
 	}
 
@@ -1487,6 +1492,7 @@
 
 	.feature-list h3 {
 		color: #ffffff;
+		font-size: 1em;
 	}
 
 		.feature-list h3:before {
@@ -1507,7 +1513,7 @@
 		.icon:before {
 			display: inline-block;
 			font-family: FontAwesome;
-			font-size: 1.25em;
+			font-size: 0.25em;
 			text-decoration: none;
 			font-style: normal;
 			font-weight: normal;
@@ -1522,6 +1528,10 @@
 
 /* Wrappers */
 
+.school {
+	text-align: center;
+}
+
 	.wrapper {
 		position: relative;
 	}
@@ -1529,7 +1539,7 @@
 		.wrapper .title {
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: 50%;
 			text-align: center;
 			text-transform: uppercase;
 			display: block;
@@ -1563,7 +1573,7 @@
 			}
 
 		.wrapper.style1 {
-			background: #282b34 url("images/overlay.png");
+			background: #7395AE url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
@@ -1789,7 +1799,23 @@
 			}
 
 			header.style1 {
-				padding: 3em 0 3em 0;
+				padding: 0 0 3em 0;
+				font-size: 2em;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: #ffffff;
+				letter-spacing: 0.25em;
+
+			}
+
+			header.style2 {
+				padding: 0 0 3em 0;
+				font-size: 2em;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: #484d55;
+				letter-spacing: 0.25em;
+
 			}
 
 				header.style1 h2 {
@@ -1869,6 +1895,14 @@
 				border-top: solid 1px #eee;
 			}
 
+			.feature-list h1 {
+				text-align: center;
+			}
+
+			.feature-list h2 {
+				font-color: #484d55;
+			}
+
 			.feature-list .row:first-child section {
 				padding-top: 0;
 				border-top: 0;
@@ -1876,7 +1910,7 @@
 
 			.feature-list h3 {
 				margin: 0 0 0.75em 0;
-				font-size: 1.15em;
+				font-size: 1.25em;
 				letter-spacing: 0.05em;
 				margin-top: -0.35em;
 			}
@@ -1949,10 +1983,13 @@
 
 				.wrapper .title {
 					font-size: 1.5em;
-					width: 100%;
+					width: 25em;
 					height: 3.25em;
+					top: -3.25em;
 					line-height: 3.25em;
 					margin-bottom: -3.25em;
+					margin-left: -12.5em;
+					padding-top: 0.5em;
 				}
 
 			#header-wrapper {
